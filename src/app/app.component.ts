@@ -14,5 +14,15 @@ export class AppComponent {
   colorMain: string = "#C55";
   
   title = 'angular page';
+
+
+  prenom: string = "Mathieu";
+  email: string = "mat@gmail.com";
+
+  monClick(e:Event, usrName: string){
+    console.log(e, usrName);
+  }
+
+  yourName: string;
   
 }
