@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  tab: Array<string> = ["Item 1", "Item 2", "Item 3"] ;
+  
+  colorMain: string = "#C55";
+  
+  title = 'angular page';
+  
 }
