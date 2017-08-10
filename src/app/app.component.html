@@ -41,6 +41,33 @@ votre nom est : {{ yourName }}
   Afficher la div
   
 </div>
+<hr>
+
+<!-- test variable -->
+<div #tstvar>1</div>
+<button (click)="fun(tstvar)">Content var in log !</button>
+<hr>
+
+<!-- afficher les elements de features -->
+<h2>Elements in Features</h2>
+
+<ul>
+  <li *ngFor="let elmt of features">
+    {{ elmt.desc }}
+  </li>
+</ul>
+<hr>
+
+<!-- intérer les elements de features dans un nv component -->
+
+<h2>Elements in Feature from ListingComponent </h2>
+
+<ul>
+  <li *ngFor="let i of features">
+    <listing-comp [des]="i"></listing-comp>
+    <list2-comp [lis]="i"></list2-comp>
+  </li>
+</ul>
 
 
 <!-- test directive structurelle ngFor -->

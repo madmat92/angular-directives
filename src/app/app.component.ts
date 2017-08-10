@@ -15,9 +15,20 @@ export class AppComponent {
   
   title = 'angular page';
 
-
   prenom: string = "Mathieu";
   email: string = "mat@gmail.com";
+
+
+  features = [
+    {desc: "item 1"},
+    {desc: "item 2"},
+    {desc: "item 3"},
+    {desc: "item 4"},
+    {desc: "item 5"},
+    {desc: "item 6"},
+    {desc: "item 7"},
+  ]
+
 
   monClick(e:Event, usrName: string){
     console.log(e, usrName);
@@ -25,4 +36,7 @@ export class AppComponent {
 
   yourName: string;
   
+  fun(vare: any) {
+    console.log(vare.innerText ++);
+  }
 }
